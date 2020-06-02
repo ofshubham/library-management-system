@@ -68,6 +68,8 @@ export class BookslistComponent implements OnInit {
           this.msg = "ERROR";
         }
       });
+    } else {
+      alert("Reading Functionality isn't available");
     }
   }
 }

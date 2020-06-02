@@ -37,7 +37,7 @@ export class UsereditadminComponent implements OnInit {
       { id: this.id, expression: { membershipexpire: this.date1 } },
       (a) => {
         if (a.msg == "SUCCESS") {
-          console.log("s");
+          this.router.navigate(["admin/users"]);
         } else {
           console.log("e");
         }
