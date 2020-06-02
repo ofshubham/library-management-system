@@ -1,0 +1,19 @@
+<form class="login-form" [formGroup]="loginForm" (ngSubmit)="login();">
+  <p class="login-text">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-lock fa-stack-1x"></i>
+    </span>
+  </p>
+  <input type="username" class="login-username" autofocus="true" required="true" placeholder="User"
+    formControlName="username" />
+  <input type="password" class="login-password" required="true" placeholder="Password" formControlName="password" />
+  <input type="submit" name="Login" value="Login" class="login-submit" />
+</form>
+<!-- <div *ngIf="error" class="error" style="color:grey">{{error}}</div> -->
+<a class="login-forgot-pass" *ngIf="error">{{error}}</a>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div>
+
+
+<router-outlet></router-outlet>

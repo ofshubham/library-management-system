@@ -1,0 +1,43 @@
+<form class="my-form" [formGroup]="bookForm" (ngSubmit)="add();">
+  <div class="container" style="background-color:grey">
+    <h1>ADD Books!</h1>
+    <ul>
+      <li>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Title" formControlName="title" required>
+          <input type="text" placeholder="Author" formControlName="author" required>
+        </div>
+      </li>
+      <li>
+        <div class="grid grid-2">
+          <input type="text" placeholder="ISBN" formControlName="isbn" required>
+          <input type="number" placeholder="Issue Number" formControlName="issue" required>
+        </div>
+        <div>
+
+          <input type="number" placeholder="Reading Hours" formControlName="reading" required>
+        </div>
+      </li>
+      <li>
+        <div class="grid grid-3">
+          <!-- <div class="required-msg">REQUIRED FIELDS</div> -->
+          <input type="submit" class="fadeIn fourth" value="ADD">
+
+          <!-- 
+          <button class="btn-grid" type="reset" disabled>
+            <span class="back">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+            </span>
+            <span class="front">RESET</span>
+          </button> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+</form>
+<footer>
+  <!-- <div class="container">
+      <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+      </small>
+    </div> -->
+</footer>

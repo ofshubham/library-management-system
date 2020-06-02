@@ -1,0 +1,21 @@
+<div style="height:30%;width:20%;margin-left:500px;box-shadow: 5px 10px 8px 10px #888888;padding: 50px">
+  <!-- height:50%;width:50%;  -->
+  <p>Select Membership expire date</p>
+
+  <!-- <p>Date: <input type="text" id="datepicker"></p> -->
+
+  <!-- <mat-form-field>
+    <input matInput [matDatepicker]="picker" >
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+  <mat-form-field>
+    <input [(ngModel)]="date1" matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+  </mat-form-field>
+
+  <input type="button" (click)="edit()" value="Save">
+
+</div>

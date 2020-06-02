@@ -1,0 +1,7 @@
+.newBooksCard {
+  height: 30%;
+  width: 20%;
+  margin-left: 50px;
+  box-shadow: 5px 10px 8px 10px #888888;
+  padding: 50px;
+}

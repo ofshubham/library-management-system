@@ -1,0 +1,49 @@
+<!-- <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+
+  <br>
+  <br>
+  <button class="w3-bar-item w3-button w3-large" (click)="w3_close()">Close &times;</button>
+  <ul *ngIf="menu">
+    <li *ngFor="let i of menu">
+      <a class="w3-bar-item w3-button" [href]="i.link">{{i.title}}</a>
+    </li>
+    <li>
+      <a class="w3-bar-item w3-button" (click)="logout()">Logout</a>
+    </li>
+  </ul>
+</div> -->
+
+<!-- 
+<div class="sidenav">
+
+  </li>
+  </ul>
+</div>
+
+<div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" (click)="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>Finance Stack Library</h1>
+    </div>
+  </div>
+
+</div> -->
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a *ngFor="let i of menu" class="w3-bar-item w3-button" [href]="i.link">{{i.title}}</a>
+
+  <a class="w3-bar-item w3-button" (click)="logout()">Logout</a>
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>
+</div>
+
+<div id="main123" style="display: inline-flex;">
+  <h2 style="font-size:30px;cursor:pointer;padding-right: 20px;padding-left: 10px;" (click)="openNav()">&#9776; </h2>
+  <h2>Library Management</h2>
+
+</div>

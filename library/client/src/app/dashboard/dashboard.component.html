@@ -1,0 +1,18 @@
+<div *ngIf="newBooks && newBooks.length==1 else multipleBooks" class="newBooksCard">
+    <p>{{this.newBooks.length}} Book Added Today!</p>
+    <ul>
+        <li>{{newBooks[0].title}}</li>
+    </ul>
+
+</div>
+
+<ng-template #multipleBooks>
+    <ng-container *ngIf="newBooks && newBooks.length > 1">
+        <div class="newBooksCard">
+            <p>{{this.newBooks.length}} Books Added Today!</p>
+            <ul>
+                <li *ngFor="let b of newBooks">{{b.title}}</li>
+            </ul>
+        </div>
+    </ng-container>
+</ng-template>
